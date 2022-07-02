@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+
+
+<div id="intro" class="bg-image shadow-2-strong mt-5" style="margin-bottom: 68px;">
+    <div class="mask d-flex align-items-center h-100">
+        <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+                <div class="col-xl-5 col-md-8 mt-5">
+                    <form method="post" class="bg-white border shadow p-4 mb-5 bg-body rounded mt-5">
+                        <h3 class="mb-3 text-center" style="font-family: 'Mochiy Pop P One', sans-serif;">Hello,
+                            {{request.user}}</h3>
+
+                    <div class="container text-center">  
+                    
+                        {% if request.user.is_authenticated %}
+
+                        <a class="btn btn-secondary" href="{% url 'logout' %}" role="button">logout</a>
+                        
+                        {% else %}
+
+                        <a class="btn btn-success" href="{% url 'login' %}" role="button">login</a>
+
+                        <a class="btn btn-primary" href="{% url 'signup' %}" role="button">signup</a>
+
+                        {% endif %}
+
+                    </div>  
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}
