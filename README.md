@@ -1,6 +1,6 @@
 # login-signup
 
-### Live demo <span>https://app-login-signup.herokuapp.com</span>
+### Live demo <span>https://sleepy-chamber-76386.herokuapp.com</span>
 
 #### Features
 
