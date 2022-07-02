@@ -27,7 +27,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['app-login-signup.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['sleepy-chamber-76386.herokuapp.com','localhost']
 
 # Application definition
 
